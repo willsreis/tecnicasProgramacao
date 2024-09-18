@@ -2,9 +2,12 @@ public class classLivro {
  
     String nome;
     String descricao;
-    double valor;
+    private double valor;
     String isbn;
     Autor autor;
+    public classLivro(){
+        System.out.println("novo livro criado");
+    }
 
 
 void mostrarDetalhes() {
@@ -15,14 +18,23 @@ void mostrarDetalhes() {
     System.out.println("Descrição: " +descricao);
     System.out.println("Valor: " +valor);
     System.out.println("ISBN: " +isbn);
-    System.out.println();
-     String mensagem2 = "Mostrando detalhes do autor";
-    System.out.println(mensagem2);
-    System.out.println("Nome: "+ autor.nome);
-    System.out.println("E-mail: "+autor.email);
-    System.out.println("CPF: " +autor.cpf);
+    if(this.temAutor()){
+        autor.mostrarDetalhes();
+    }
     System.out.println();
 
+
+}
+public boolean  aplicaDescontoDe(double porcentagem){
+    if (porcentagem > 0.5){
+        return false;
+    } 
+    this.valor -= this.valor * porcentagem;
+    return true;
+}
+public boolean temAutor(){
+    return (this.autor != null);
 }
 }
+
 

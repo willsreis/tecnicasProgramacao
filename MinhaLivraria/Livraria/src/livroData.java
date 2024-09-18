@@ -1,4 +1,3 @@
-
 public class livroData {
     public static void main (String[] args){
        
@@ -17,7 +16,8 @@ public class livroData {
 
         livro.mostrarDetalhes();
 
-    
+        System.out.println();
+
 
         Autor outroAutor = new Autor();
         outroAutor.nome = "Mariazinha Livreira";
@@ -33,6 +33,8 @@ public class livroData {
 
         outroLivro.mostrarDetalhes();
         System.out.println();
+
+        classLivro livro1 = new classLivro();
         
 
        

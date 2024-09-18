@@ -1,7 +1,8 @@
-
 public class ComparandoReferencias {
 
     public static void main(String[] args) {
+        
+
         Autor autor = new Autor();
         autor.nome = "testeteste teste";
         autor.email = "teste@abcteste.com";
