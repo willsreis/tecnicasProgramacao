@@ -26,7 +26,7 @@ void mostrarDetalhes() {
 
 }
 public boolean  aplicaDescontoDe(double porcentagem){
-    if (porcentagem > 0.5){
+    if (porcentagem > 0.3){
         return false;
     } 
     this.valor -= this.valor * porcentagem;
@@ -34,6 +34,13 @@ public boolean  aplicaDescontoDe(double porcentagem){
 }
 public boolean temAutor(){
     return (this.autor != null);
+}
+public void adicionaValor(double preco){
+    this.valor = preco;
+}
+public double retornaValor(){
+    return this.valor;
+    
 }
 }
 

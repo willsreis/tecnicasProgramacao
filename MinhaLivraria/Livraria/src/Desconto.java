@@ -3,19 +3,20 @@ public class Desconto {
     public static void main(String[] args) {
 
         classLivro livro = new classLivro();
-        livro.valor = 59.90;
-        System.out.println("Valor atual: " + livro.valor);
+        // livro.valor = 59.90;
+        livro.adicionaValor(59.90);
+        System.out.println("Valor atual: " + livro.retornaValor());
 
         // livro.valor -= livro.valor * 0.1;
-        if (!livro.aplicaDescontoDe(0.51)){
+        if (!livro.aplicaDescontoDe(0.29)){
             System.out.println("Desconto não pode ser maior que 30%");
         } else {
-            System.out.println("Valor com o desconto:" + livro.valor);
+            System.out.println("Valor com o desconto:" + livro.retornaValor());
         }
         // livro.aplicaDescontoDe(0.1);
         // livro.valor -= livro.valor * 0.4;
         // livro.aplicaDescontoDe(0.4);
-        System.out.println("Valor com desconto: " + livro.valor);
+        // System.out.println("Valor com desconto: " + livro.retornaValor());
         System.out.println();
 
         Autor autor = new Autor();

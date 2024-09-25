@@ -10,7 +10,7 @@ public class livroData {
         classLivro livro = new classLivro();
         livro.nome = "Java 8";
         livro.descricao = "Novos recurso da linguagem";
-        livro.valor = 59.90;
+        livro.adicionaValor(59.90);
         livro.isbn = "978-85-66-250-46-6";
         livro.autor = autor;
 
@@ -27,7 +27,7 @@ public class livroData {
         classLivro outroLivro = new classLivro();
         outroLivro.nome = "Sherlock Holmes";
         outroLivro.descricao = "O desafio do tesouro perdido";
-        outroLivro.valor = 38.75;
+        outroLivro.adicionaValor(38.75);
         outroLivro.isbn = "487-52-542-63-CX";
         outroLivro.autor = outroAutor;
 
