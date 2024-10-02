@@ -1,3 +1,4 @@
+import RefatLivraria.Autor;
 
 public class Autor  {
   	private String nome;

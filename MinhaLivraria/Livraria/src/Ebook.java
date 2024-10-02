@@ -1,3 +1,4 @@
+import RefatLivraria.Autor;
 
 public class Ebook extends ClassLivro implements Promocional  {
 
