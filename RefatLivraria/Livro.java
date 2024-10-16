@@ -17,7 +17,7 @@ public class Livro {
 	public void mostrarDetalhes(){
 		String mensagem = "Estou mostrando detalhes do livro:";
 		System.out.println(mensagem);
-		System.out.println("O nome do livro é:"+nome);
+		System.out.println("O nome do livro é: "+nome);
 		System.out.println("Descrição: "+descricao);
 		System.out.println("Valor: "+valor);
 		System.out.println("isbn: "+isbn);

@@ -28,6 +28,8 @@ public class Livraria {
 		livro.mostrarDetalhes();
 		outrolivro.mostrarDetalhes();
 
+		
+
 		System.out.println("Valor atual: "+livro.getValor());
 		if(!livro.aplicaDescontoDe(0.1)){
 			System.out.println("Desconto não pode ser maior do que 30%");
@@ -43,6 +45,29 @@ public class Livraria {
 		else{
 			System.out.println("Valor com desconto: "+livro.getValor());
 		}
+
+		System.out.println("_____----_____");
+		Autor ebookAutor = new Autor();
+		ebookAutor.setNome("Jaiminho Livreiro");
+		ebookAutor.setEmail("Jayminhoroots@crazydog.com");
+		ebookAutor.setCpf("256.548.569-56");
+		Ebook ebook = new Ebook(ebookAutor);
+		ebook.setNome("Ebook Cachoera rasa 002");
+		ebook.setValor(40.00);
+		ebook.setDescricao("Como ser vida loka parte 2");
+		ebook.setIsbn("256-56-45698-21-3");
+
+		System.out.println("Valor atual: "+ebook.getValor());
+		if(!ebook.aplicaDescontoDe(0.15)){
+			System.out.println("Desconto não pode ser maior que 15%");
+		}
+		else{
+			System.out.println("Valor com desconto: "+ebook.getValor());
+		}
+
+
+		ebook.mostrarDetalhes();
+
 
 	}
 }
